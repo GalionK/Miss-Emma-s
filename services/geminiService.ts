@@ -1,7 +1,8 @@
 import { GoogleGenAI, Modality, Type } from "@google/genai";
 import { Accent, FormattedTextResponse, VocabularyEntry, PronunciationFeedbackResponse, ReadingSpeed } from "../types";
+import { GEMINI_API_KEY } from "../config";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
+const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
 export async function getFormattedText(text: string): Promise<FormattedTextResponse> {
   const prompt = `You are Miss Emma, a friendly English teacher. Your goal is to help an ESL student.
