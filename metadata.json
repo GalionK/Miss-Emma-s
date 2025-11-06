@@ -1,0 +1,7 @@
+{
+  "name": " Miss Emma's Reading Room",
+  "description": "An interactive English learning assistant. Enter any text, and Miss Emma, your friendly AI teacher, will read it aloud slowly and clearly. She can also help by explaining difficult words in Arabic to support ESL students.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
